@@ -8,7 +8,13 @@ public class Main{
         bst.put(18); 
         bst.put(15); 
         bst.put(21); 
-   
+		
+		System.out.println("Before");
+		System.out.print("LEVEL ORDER: ");
+		bst.levelOrder();
+		System.out.println();
+		System.out.println();		
+		
 		System.out.print("IN ORDER: ");
         bst.inOrder(); 
 		System.out.println();
@@ -34,6 +40,13 @@ public class Main{
 		bst.remove(10);
 		bst.remove(4);
 		bst.remove(15);
+		
+		System.out.println("After");
+		System.out.print("LEVEL ORDER: ");
+		bst.levelOrder();
+		System.out.println();
+		System.out.println();		
+
 		
 		System.out.print("IN ORDER: ");
         bst.inOrder(); 
