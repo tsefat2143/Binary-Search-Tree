@@ -1,3 +1,6 @@
+import java.util.Queue;
+import java.util.ArrayDeque;
+
 public class BinarySearchTree implements Map {   
     Node root; 
         
@@ -85,6 +88,22 @@ public class BinarySearchTree implements Map {
 		postOrder(root);
 	}
 	
+	public void levelOrder(Node root) {
+      Queue<Node> queue = new ArrayDeque<>();
+      if (root != null)
+         queue.add(root);
+      while (!queue.isEmpty()) {
+         Node n = queue.remove();
+         System.out.print(n.k + " ");
+         if (n.left != null) queue.add(n.left);
+         if (n.right != null) queue.add(n.right);
+      }
+   }
+   
+   public void levelOrder(){
+	   levelOrder(root);
+   }
+   
 	public Node get(int k) {
 		if (root == null)
 			System.out.println("ADD NODES");
