@@ -89,14 +89,14 @@ public class BinarySearchTree implements Map {
 	}
 	
 	public void levelOrder(Node root) {
-      Queue<Node> queue = new ArrayDeque<>();
-      if (root != null)
-         queue.add(root);
-      while (!queue.isEmpty()) {
-         Node n = queue.remove();
-         System.out.print(n.k + " ");
-         if (n.left != null) queue.add(n.left);
-         if (n.right != null) queue.add(n.right);
+      	Queue<Node> queue = new ArrayDeque<>();
+      	if (root != null)
+		queue.add(root);
+      	while (!queue.isEmpty()) {
+		Node n = queue.remove();
+         	System.out.print(n.k + " ");
+         	if (n.left != null) queue.add(n.left);
+         	if (n.right != null) queue.add(n.right);
       }
    }
    
