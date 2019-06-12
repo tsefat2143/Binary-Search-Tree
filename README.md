@@ -4,6 +4,7 @@ This tree can be printed in level order pre-order, post-order, and inorder trave
 
 
 		10 
+		
            /      \  
          6         18 
        /   \      /   \ 
